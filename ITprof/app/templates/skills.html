@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Навыки{% endblock title %}
+{% block header %}Навыки{% endblock header %}
+
+{% block content%}
+
+<div class="RelevanceDiv">
+    {{ SkillsName }}
+    <table border="1px">
+        {% for x in SkillsTable %}
+        <tr>
+            {% for y in x %}
+            <th>{{y}}</th>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock content %}
